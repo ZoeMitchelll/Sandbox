@@ -422,6 +422,7 @@ function GetMap() {
     color: "rgb(60,0,128)"
   });
   pin0.metadata = {
+    place: "Peoria",
     title: "Peoria HOJ: 919 NE Jefferson Ave, Peoria, IL 61603",
     description:
       "Service starts at 1pm CST, call 309-989-2772 for additional details"
@@ -665,30 +666,28 @@ function findClosestChurch(currentLoation) {
   smallestDistance = Number.POSITIVE_INFINITY;
   while (i < map.entities.getLength()) {
     entity = map.entities.get(i);
-    // var distance = Math.acos(
-    //   Math.sin((Math.PI() * [entity.geometry.y]) / 180.0) *
-    //     Math.sin((Math.PI() * [currentLoation.latitude]) / 180.0) +
-    //     Math.cos((Math.PI() * [entity.geometry.y]) / 180.0) *
-    //       Math.cos((Math.PI() * [currentLoation.latitude]) / 180.0) *
-    //       Math.cos(
-    //         (Math.PI() * [entity.geometry.x]) / 180.0 -
-    //           (Math.PI() * [currentLoation.longitude]) / 180.0
-    //       )
-    // );
-    // var units = directionsManager.getRequestOptions().distanceUnit;
-    // if (units == Microsoft.Maps.Directions.DistanceUnit.km) {
-    //   distance = distance * 6378;
-    // } else {
-    //   distance = distance * 3963;
-    // }
-    console.log(i + " / " + map.entities.getLength());
-    // console.log(entity.title + ": " + distance);
-    // if (distance < smallestDistance) {
-    //   smallestDistance = distance;
-    //   closestLocation = entity;
-    // }
+    var distance = Math.acos(
+      Math.sin((Math.PI * [entity.geometry.y]) / 180.0) *
+        Math.sin((Math.PI * [currentLoation.latitude]) / 180.0) +
+        Math.cos((Math.PI * [entity.geometry.y]) / 180.0) *
+          Math.cos((Math.PI * [currentLoation.latitude]) / 180.0) *
+          Math.cos(
+            (Math.PI * [entity.geometry.x]) / 180.0 -
+              (Math.PI * [currentLoation.longitude]) / 180.0
+          )
+    );
+    var units = directionsManager.getRequestOptions().distanceUnit;
+    if (units == Microsoft.Maps.Directions.DistanceUnit.km) {
+      distance = distance * 6378;
+    } else {
+      distance = distance * 3963;
+    }
+    console.log(entity.metadata.place + ": " + distance);
+    if (distance < smallestDistance) {
+      smallestDistance = distance;
+      closestLocation = entity;
+    }
     i += 1;
   }
-  // console.log(closestLocation);
   return closestLocation;
 }
