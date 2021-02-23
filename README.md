@@ -1,2 +1,1 @@
-# Sandbox
-Created with CodeSandbox
+# Demo app for Bible API

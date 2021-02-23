@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bible API Example Application</title>
+
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    $("#header").prepend(
+      '<div id="menu-icon"><span class="first"></span><span class="second"></span><span class="third"></span></div>'
+    );
+    $("#menu-icon").on("click", function () {
+      $("nav").slideToggle();
+      $(this).toggleClass("active");
+    });
+  </script>
+  <div class="sticky" id="header">
+    <div class="logo">
+      <a href="/index.html">HOJ</a>
+    </div>
+    <nav>
+      <form class="search" action="search.php">
+        <input name="q" placeholder="Search Bible..." type="search" />
+      </form>
+      <ul>
+        <li>
+          <a href="/about.html">About</a>
+        </li>
+        <li>
+          <a onClick="loadBooks()" href="/book.html">Bible</a>
+          <dl class="mega-dropdown">
+            <li class="row">
+              <dl class="mega-col">
+                <dt>Law</dt>
+                <dd><a href="#">Genesis</a></dd>
+                <dd><a href="#">Exodus</a></dd>
+                <dd><a href="#">Leviticus</a></dd>
+                <dd><a href="#">Numbers</a></dd>
+                <dd><a href="#">Dueteronomy</a></dd>
+              </dl>
+              <dl class="mega-col">
+                <dt>History</dt>
+                <dd><a href="#">Joshua</a></dd>
+                <dd><a href="#">Judges</a></dd>
+                <dd><a href="#">Ruth</a></dd>
+                <dd><a href="#">1 Samuel</a></dd>
+                <dd><a href="#">2 Samuel</a></dd>
+                <dd><a href="#">1 Kings</a></dd>
+                <dd><a href="#">2 Kings</a></dd>
+                <dd><a href="#">1 Chronicles</a></dd>
+                <dd><a href="#">2 Chronicles</a></dd>
+                <dd><a href="#">Ezra</a></dd>
+                <dd><a href="#">Nehimiah</a></dd>
+                <dd><a href="#">Ester</a></dd>
+              </dl>
+              <dl class="mega-col">
+                <dt>Poetry</dt>
+                <dd><a href="#">Job</a></dd>
+                <dd><a href="#">Psalms</a></dd>
+                <dd><a href="#">Proverbs</a></dd>
+                <dd><a href="#">Ecclesiastes</a></dd>
+                <dd><a href="#">Song of Solomon</a></dd>
+              </dl>
+              <dl class="mega-col">
+                <dt>Prophesy</dt>
+                <dd><a href="#">Isaiah</a></dd>
+                <dd><a href="#">Jeremiah</a></dd>
+                <dd><a href="#">Lamentations</a></dd>
+                <dd><a href="#">Ezekiel</a></dd>
+                <dd><a href="#">Daniel</a></dd>
+                <dd><a href="#">Hosea</a></dd>
+                <dd><a href="#">Joel</a></dd>
+                <dd><a href="#">Amos</a></dd>
+                <dd><a href="#">Obadiah</a></dd>
+                <dd><a href="#">Jonah</a></dd>
+                <dd><a href="#">Micah</a></dd>
+                <dd><a href="#">Nahum</a></dd>
+                <dd><a href="#">Habbakuk</a></dd>
+                <dd><a href="#">Zephaniah</a></dd>
+                <dd><a href="#">Haggai</a></dd>
+                <dd><a href="#">Zechariah</a></dd>
+                <dd><a href="#">Malachi</a></dd>
+              </dl>
+              <dl class="mega-col">
+                <dt>Gospel</dt>
+                <dd><a href="#">Matthew</a></dd>
+                <dd><a href="#">Mark</a></dd>
+                <dd><a href="#">Luke</a></dd>
+                <dd><a href="#">John</a></dd>
+                <dd><a href="#">Acts</a></dd>
+              </dl>
+              <dl class="mega-col">
+                <dt>Letters</dt>
+                <dd><a href="#">Romans</a></dd>
+                <dd><a href="#">1 Corinthians</a></dd>
+                <dd><a href="#">2 Corinthians</a></dd>
+                <dd><a href="#">Galatians</a></dd>
+                <dd><a href="#">Ephesians</a></dd>
+                <dd><a href="#">Philipians</a></dd>
+                <dd><a href="#">Colosians</a></dd>
+                <dd><a href="#">1 Thessalonians</a></dd>
+                <dd><a href="#">2 Thessalonians</a></dd>
+                <dd><a href="#">1 Timothy</a></dd>
+                <dd><a href="#">2 Timothy</a></dd>
+                <dd><a href="#">Titus</a></dd>
+                <dd><a href="#">Philmon</a></dd>
+                <dd><a href="#">Hebrews</a></dd>
+                <dd><a href="#">James</a></dd>
+                <dd><a href="#">1 Peter</a></dd>
+                <dd><a href="#">2 Peter</a></dd>
+                <dd><a href="#">1 John</a></dd>
+                <dd><a href="#">2 John</a></dd>
+                <dd><a href="#">3 John</a></dd>
+                <dd><a href="#">Jude</a></dd>
+                <dd><a href="#">Revelations</a></dd>
+              </dl>
+            </li>
+          </dl>
+        </li>
+        <li class="dropdown">
+          <a href="/lesson.html">Lessons</a>
+          <ul>
+            <li><a href="/pdf.html">PDFs</a></li>
+            <li><a href="#">Audio Files</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Uploaded Notes</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/faqs.html">FAQs</a>
+        </li>
+        <li>
+          <a href="/locations.html">Locations</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <body>
+    <div class="container pt-5">
+      <h1>About HOJ Bible Resource</h1>
+      <h2>Our Beliefs</h2>
+      <p>
+        The House of Jacob Bible Study Resource is for those who seek entrance
+        into the Kingdom of God. It is a place for those who wish to recognize
+        and learn about all that is written in the complete Holy Bible to
+        congregate and learn. We offer a space for those who have faith in the
+        testimony of Jesus Christ (Matthew 22: 34-40) and observe all of God’s
+        laws accordingly, including: the Ten commandments (Exodus 20:1-17),
+        God’s Dietary Law (Leviticus 11) and God’s Feast Days (Leviticus 23). We
+        also acknowledge and teach the lineage of all families of the earth
+        including the Gentiles, Hamites and Shemites (Genesis 10). This includes
+        the belief that Israelite is a physical lineage coming from Abraham,
+        Isaac, and Jacob (Genesis 35: 10-13)as well a spiritual desegnation
+        comprising of a mixed multitude who seve the God of the Bible (Exodus
+        12:35-41 & I Corinthians 10:1-4). We believe that the global suffering
+        of the African Diaspora, who were historically taken on slave ships into
+        various countries, is the result of them being the physical seed of
+        Israel who have turned away from the Lord God of Israel (Deuteronomy 28
+        & 2 Kings 17: 9-24 & Luke 3:1-2 & Luke 21:24). We believe that God
+        created a natural order (Exodus 19: 3-6 & Act 10) that commands the true
+        descendants of the Israelites should serve te God of Israel and teach
+        the whole world how to achieve salvation, which is open to all people to
+        desire to serve God according to His commandments (Titus 2:11-13 &
+        Isaiah 56:5-7).
+      </p>
+      <h2>Statement of Purpuse</h2>
+      <p>
+        This Bible Study Resource is meant to offer a central, online location
+        to learn about the true and living God, the God of Abraham, Isaac, and
+        Jacob, our messiah, and high priest Jesus Christ. Our free resources
+        include a copy of the authorized KJV with commentary written to explain
+        difficult and little known themes in the bible, audio, video, and pdf
+        copies of biblical lessons, a page where common biblical questions can
+        be asked and addressed, and a locating service which uses your
+        geolocation to suggest a church to attend and congregate on the Sabbath.
+      </p>
+    </div>
+  </body>
+</html>
