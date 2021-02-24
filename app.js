@@ -497,7 +497,7 @@ function GetMap() {
     place: "Israel Church of Jesus in Toronto",
     title: "6355 Airport Rd Mississauga, ON L4V 1E4",
     description:
-      "Service starts at 12pm EST,  call 647-498-7035 for additional details"
+      "Service starts at 1pm EST, call 647-498-7035 for additional details"
   };
   var pin9 = new Microsoft.Maps.Pushpin(new_york, {
     color: "#076aac"
@@ -560,53 +560,143 @@ function GetMap() {
     place: "Israel Church of Jesus in Los Angeles",
     title: "7919 South Broadway Avenue, Los Angeles, CA 90003",
     description:
-      "Service starts at 12pm EST, call 323-988-7601 for additional details"
+      "Service starts at 1pm EST, call 323-988-7601 for additional details"
   };
   var pin16 = new Microsoft.Maps.Pushpin(gary, {
     color: "#076aac"
   });
+  pin16.metadata = {
+    place: "Israel Church of Jesus in Gary",
+    title: "7035 West 25th Avenue, Gary, IN 46406",
+    description:
+      "Service starts at 1pm CST, call 219-979-2633  for additional details"
+  };
   var pin17 = new Microsoft.Maps.Pushpin(atl_iog, {
     color: "rgb(18, 20, 119)"
   });
+  pin17.metadata = {
+    place: "Israel of God in Atlanta",
+    title: "4957 Redan Rd., Stone Mountain, GA 30088",
+    description:
+      "Service starts at 1pm EST, call 404-298-9393 for additional details"
+  };
   var pin18 = new Microsoft.Maps.Pushpin(baltimore, {
     color: "rgb(18, 20, 119)"
   });
+  pin18.metadata = {
+    place: "Israel of God in Baltimore",
+    title: "3113 Richwood Avenue Baltimore, MD 21244",
+    description:
+      "Service starts at 1pm EST, call 410-298-1024 for additional details"
+  };
   var pin19 = new Microsoft.Maps.Pushpin(baton_rouge, {
     color: "rgb(18, 20, 119)"
   });
+  pin19.metadata = {
+    place: "Israel of God in Baton Rouge",
+    title: "1821 Wooddale Court, Baton Rouge, LA 70806",
+    description:
+      "Service starts at 12pm CST, call 773-255-9858 for additional details"
+  };
   var pin20 = new Microsoft.Maps.Pushpin(birmingham, {
     color: "rgb(18, 20, 119)"
   });
+  pin20.metadata = {
+    place: "Israel of God in Birmingham",
+    title: "2205 3rd Street Northeast, Center Point, AL 35215",
+    description:
+      "Service starts at 12pm CST, call 205-356-5401 for additional details"
+  };
   var pin21 = new Microsoft.Maps.Pushpin(buffalo, {
     color: "rgb(18, 20, 119)"
   });
+  pin21.metadata = {
+    place: "Israel of God in Buffalo",
+    title: "372 Fougeron St., Buffalo, NY 14211",
+    description:
+      "Service starts at 1pm EST, call 716-897-2270 for additional details"
+  };
   var pin22 = new Microsoft.Maps.Pushpin(dallas, {
     color: "rgb(18, 20, 119)"
   });
+  pin22.metadata = {
+    place: "Israel of God in Dallas",
+    title: "522 Holcomb Road, Dallas TX 75217",
+    description:
+      "Service starts at 12pm CST, call 214-432-7711 for additional details"
+  };
   var pin23 = new Microsoft.Maps.Pushpin(houston, {
     color: "rgb(18, 20, 119)"
   });
+  pin23.metadata = {
+    place: "Israel of God in Houston",
+    title: "11411 Homestead Rd., Houston, Texas 77016",
+    description:
+      "Service starts at 12pm CST, call 832-598-4707 for additional details"
+  };
   var pin24 = new Microsoft.Maps.Pushpin(jackson, {
     color: "rgb(18, 20, 119)"
   });
+  pin24.metadata = {
+    place: "Israel of God in Jackson",
+    title: "440 Cedars of Lebanon Rd. Jackson, Mississippi 39206",
+    description:
+      "Service starts at 12pm CST, call 601-487-8162 for additional details"
+  };
   var pin25 = new Microsoft.Maps.Pushpin(kalamazoo, {
     color: "rgb(18, 20, 119)"
   });
+  pin25.metadata = {
+    place: "Israel of God in Kalamazoo",
+    title: "625 Stassen Ave. Kalamazoo, MI 49004",
+    description:
+      "Service starts at 1pm EST, call 269-381-1926 for additional details"
+  };
   var pin26 = new Microsoft.Maps.Pushpin(memphis, {
     color: "rgb(18, 20, 119)"
   });
+  pin26.metadata = {
+    place: "Israel of God in Memphis",
+    title: "4485 Elvis Presley Blvd., Memphis, TN 38116",
+    description:
+      "Service starts at 12pm CST, call 901-332-6221 for additional details"
+  };
   var pin27 = new Microsoft.Maps.Pushpin(minneapolis, {
     color: "rgb(18, 20, 119)"
   });
+  pin27.metadata = {
+    place: "Israel of God in Minneapolis",
+    title: "2922 Cedar Ave. South Minneapolis, Minnesota 55407",
+    description:
+      "Service starts at 12pm CST, call 612-418-8311 for additional details"
+  };
   var pin28 = new Microsoft.Maps.Pushpin(montgomery, {
     color: "rgb(18, 20, 119)"
   });
+  pin28.metadata = {
+    place: "Israel of God in Montgomery",
+    title: "3401 Harrison Rd, Montgomery, AL 36109",
+    description:
+      "Service starts at 12pm CST, call 334-398-1371 for additional details"
+  };
   var pin29 = new Microsoft.Maps.Pushpin(orlando, {
     color: "rgb(18, 20, 119)"
   });
+  pin29.metadata = {
+    place: "Israel of God in Orlando",
+    title: "5967 W. Colonial Drive, Orlando, FL 32808",
+    description:
+      "Service starts at 1pm EST, call 407-601-6629 for additional details"
+  };
   var pin30 = new Microsoft.Maps.Pushpin(zimbabwe, {
     color: "rgb(18, 20, 119)"
   });
+  pin30.metadata = {
+    place: "Israel of God in Goromonzi, Zimbabwe",
+    title: "Devonia Farm, Chipfumbi North, Goromonzi, Zimbabwe, Africa",
+    description:
+      "Service starts at 12:30pm GMT, call 263-77-295-2231 for additional details"
+  };
   var pin31 = new Microsoft.Maps.Pushpin(alaska, {
     color: "rgb(18, 20, 119)"
   });
