@@ -355,6 +355,11 @@ function GetMap() {
         position.coords.latitude,
         position.coords.longitude
       );
+      var closest_pushpin = findClosestChurch(you_are_here);
+      var closest_camp = new Microsoft.Maps.Location(
+        closest_pushpin.geometry.y,
+        closest_pushpin.geometry.x
+      );
 
       var curr = new Microsoft.Maps.Directions.Waypoint({
         address: "You Are Here",
@@ -364,8 +369,10 @@ function GetMap() {
       var ex = new Microsoft.Maps.Directions.Waypoint({
         // address: "Portland, OR"
         address: "Closest Congregation",
-        location: findClosestChurch(you_are_here)
+        location: closest_camp
       });
+      console.log(curr);
+      console.log(ex);
       directionsManager.addWaypoint(curr);
       directionsManager.addWaypoint(ex);
     });
@@ -800,7 +807,7 @@ function GetMap() {
   var pin42 = new Microsoft.Maps.Pushpin(zion, {
     color: "#66CC00"
   });
-  pin41.metadata = {
+  pin42.metadata = {
     place: "Israel's Church of the Living God in Zion",
     title: "2501 Deborah Ave Unit 6, Zion, IL 60099",
     description:
@@ -935,7 +942,6 @@ function findClosestChurch(currentLoation) {
     } else {
       distance = distance * 3963;
     }
-    console.log(entity.metadata.place + ": " + distance);
     if (distance < smallestDistance) {
       smallestDistance = distance;
       closestLocation = entity;
