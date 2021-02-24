@@ -422,56 +422,146 @@ function GetMap() {
     color: "rgb(60,0,128)"
   });
   pin0.metadata = {
-    place: "Peoria",
-    title: "Peoria HOJ: 919 NE Jefferson Ave, Peoria, IL 61603",
+    place: "House of Jacob in Peoria",
+    title: "919 NE Jefferson Ave, Peoria, IL 61603",
     description:
       "Service starts at 1pm CST, call 309-989-2772 for additional details"
   };
   var pin1 = new Microsoft.Maps.Pushpin(detroit, {
     color: "rgb(60, 0, 128)"
   });
+  pin1.metadata = {
+    place: "House of Jacob in Detroit",
+    title: "16145 Hamilton Ave, Highland Park, MI 48203",
+    description:
+      "Service starts at 1pm CST, call 313-862-2221 for additional details"
+  };
   var pin2 = new Microsoft.Maps.Pushpin(chicago, {
     color: "rgb(60, 0, 128)"
   });
+  pin2.metadata = {
+    place: "House of Jacob in Chicago",
+    title: "2515 E 75th St, Chicago, IL 60649",
+    description:
+      "Service starts at 1pm CST, call 773-921-8190 for additional details"
+  };
   var pin3 = new Microsoft.Maps.Pushpin(milwaukee, {
     color: "rgb(60, 0, 128)"
   });
+  pin3.metadata = {
+    place: "House of Jacob in Milwaukee",
+    title: "3701 W Lisbon Ave, Milwaukee, WI 53208",
+    description:
+      "Service starts at 1pm CST, call 414-488-8846 for additional details"
+  };
   var pin4 = new Microsoft.Maps.Pushpin(las_vegas, {
     color: "#076aac"
   });
+  pin4.metadata = {
+    place: "Israel Church of Jesus in Las Vegas",
+    title: "931 West Owens Avenue, Las Vegas, NV 89106",
+    description:
+      "Service starts at 12pm PST, call 702-448-2277 for additional details"
+  };
   var pin5 = new Microsoft.Maps.Pushpin(raleigh, {
     color: "#076aac"
   });
+  pin5.metadata = {
+    place: "Israel Church of Jesus in Raleigh",
+    title: "1200 Claren Circle, Raleigh, NC 27560",
+    description:
+      "Service starts at 12pm EST, call 919-321-2161 for additional details"
+  };
   var pin6 = new Microsoft.Maps.Pushpin(dc, {
     color: "#076aac"
   });
+  pin6.metadata = {
+    place: "Israel Church of Jesus in DC",
+    title: "4328 Farragut St, Hyattsvile, MD 20781",
+    description:
+      "Service starts at 12pm EST, call 866-659-5274  for additional details"
+  };
   var pin7 = new Microsoft.Maps.Pushpin(oakland, {
     color: "#076aac"
   });
+  pin7.metadata = {
+    place: "Israel Church of Jesus in Oakland",
+    title: "1 Hegenberger Rd, Oakland, CA 94621",
+    description:
+      "Service starts at 12pm PST, call 866-659-5274 for additional details"
+  };
   var pin8 = new Microsoft.Maps.Pushpin(toronto, {
     color: "#076aac"
   });
+  pin8.metadata = {
+    place: "Israel Church of Jesus in Toronto",
+    title: "6355 Airport Rd Mississauga, ON L4V 1E4",
+    description:
+      "Service starts at 12pm EST,  call 647-498-7035 for additional details"
+  };
   var pin9 = new Microsoft.Maps.Pushpin(new_york, {
     color: "#076aac"
   });
+  pin9.metadata = {
+    place: "Israel Church of Jesus in New York",
+    title: "144-10 135th Avenue, Jamaica, NY 11436",
+    description:
+      "Service starts at 12pm EST, call 718-775-3301  for additional details"
+  };
   var pin10 = new Microsoft.Maps.Pushpin(jacksonville, {
     color: "#076aac"
   });
+  pin10.metadata = {
+    place: "Israel Church of Jesus in Jacksonville",
+    title: "4686 Lenoir Avenue South, Jacksonville, FL 32216",
+    description:
+      "Service starts at 12pm EST, call 904-677-5720 for additional details"
+  };
   var pin11 = new Microsoft.Maps.Pushpin(cinncinnati, {
     color: "#076aac"
   });
+  pin11.metadata = {
+    place: "Israel Church of Jesus in Cinncinnati",
+    title: "1425 Linn Street, Cinncinnati, OH 45214",
+    description:
+      "Service starts at 12pm EST, call 513-407-9111 for additional details"
+  };
   var pin12 = new Microsoft.Maps.Pushpin(philly, {
     color: "#076aac"
   });
+  pin12.metadata = {
+    place: "Israel Church of Jesus in Phillidelphia",
+    title: "201 Industrial Highway, Ridley Park, PA 19078",
+    description:
+      "Service starts at 12pm EST, call 215-821-1342 for additional details"
+  };
   var pin13 = new Microsoft.Maps.Pushpin(atlanta, {
     color: "#076aac"
   });
+  pin13.metadata = {
+    place: "Israel Church of Jesus in Atlanta",
+    title: "5611 West Fayetteville Road, College Park, GA 30349",
+    description:
+      "Service starts at 12pm EST, call 678-528-3600 for additional details"
+  };
   var pin14 = new Microsoft.Maps.Pushpin(indianapolis, {
     color: "#076aac"
   });
+  pin14.metadata = {
+    place: "Israel Church of Jesus in Indianapolis",
+    title: "4713 N Shadeland Ave, Indianapolis, IN 46226",
+    description:
+      "Service starts at 12pm EST, call 317-973-0969 for additional details"
+  };
   var pin15 = new Microsoft.Maps.Pushpin(los_angeles, {
     color: "#076aac"
   });
+  pin15.metadata = {
+    place: "Israel Church of Jesus in Los Angeles",
+    title: "7919 South Broadway Avenue, Los Angeles, CA 90003",
+    description:
+      "Service starts at 12pm EST, call 323-988-7601 for additional details"
+  };
   var pin16 = new Microsoft.Maps.Pushpin(gary, {
     color: "#076aac"
   });
