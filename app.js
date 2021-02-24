@@ -700,39 +700,112 @@ function GetMap() {
   var pin31 = new Microsoft.Maps.Pushpin(alaska, {
     color: "rgb(18, 20, 119)"
   });
+  pin31.metadata = {
+    place: "Israel of God in Anchorage",
+    title: "2808 E Tudor Rd Unit #3, Anchorage, AK 99507",
+    description:
+      "Service starts at 12pm CST, call  907-240-0527 for additional details"
+  };
   var pin32 = new Microsoft.Maps.Pushpin(stlouis, {
     color: "rgb(18, 20, 119)"
   });
+  pin32.metadata = {
+    place: "Israel of God in St. Louis",
+    title: "8145 Page Ave, St. Louis, MO 63130",
+    description:
+      "Service starts at 12pm CST, call 314-764-2044 for additional details"
+  };
   var pin33 = new Microsoft.Maps.Pushpin(auburn_hills, {
     color: "rgb(18, 20, 119)"
   });
+  pin33.metadata = {
+    place: "Israel of God in Auborn Hills",
+    title: "2550 Aimee Lane Auburn Hills, MI 48326",
+    description:
+      "Service starts at 1pm EST, call 248-310-1622 for additional details"
+  };
   var pin34 = new Microsoft.Maps.Pushpin(uk, {
     color: "rgb(18, 20, 119)"
   });
+  pin34.metadata = {
+    place: "Israel of God in Birmingham, UK",
+    title:
+      "GRS Lions Club Church Rd, Erdington Birmingham United Kingdom B24 9BA",
+    description:
+      "Service starts at 1 PM GMT+1, call +0 784-795-3378 for additional details"
+  };
   var pin35 = new Microsoft.Maps.Pushpin(clevland, {
     color: "rgb(18, 20, 119)"
   });
+  pin35.metadata = {
+    place: "Israel of God in Clevland",
+    title: "3224 W 65th Street Cleveland, OH 44102",
+    description:
+      "Service starts at 1pm EST, call 708-392-1320 for additional details"
+  };
   var pin36 = new Microsoft.Maps.Pushpin(new_jersey, {
     color: "rgb(18, 20, 119)"
   });
+  pin36.metadata = {
+    place: "Israel of God in Iselin",
+    title: "APA Hotel Woodbridge, 120 S. Wood Ave, Iselin, NJ 08830",
+    description:
+      "Service starts at 1pm EST, call 732-213-0870 for additional details"
+  };
   var pin37 = new Microsoft.Maps.Pushpin(kansas_city, {
     color: "rgb(18, 20, 119)"
   });
+  pin37.metadata = {
+    place: "Israel of God in Kansas City",
+    title: "4501 Walnut Kansas City, MO 64111",
+    description:
+      "Service starts at 12pm CST, call  816-878-9593 for additional details"
+  };
   var pin38 = new Microsoft.Maps.Pushpin(phoenix, {
     color: "rgb(18, 20, 119)"
   });
+  pin38.metadata = {
+    place: "Israel of God in Phoenix",
+    title: "3331 W. Earll Dr., Phoenix, AZ 85017",
+    description:
+      "Service starts at 10pm MST, call 602-348-1946 for additional details"
+  };
   var pin39 = new Microsoft.Maps.Pushpin(sikeston, {
     color: "rgb(18, 20, 119)"
   });
+  pin39.metadata = {
+    place: "Israel of God in Sikeston",
+    title: "205 Rogers St., Sikeston, MO 63801",
+    description:
+      "Service starts at 12pm CST, call 618-306-0885 for additional details"
+  };
   var pin40 = new Microsoft.Maps.Pushpin(la_iog, {
     color: "rgb(18, 20, 119)"
   });
+  pin40.metadata = {
+    place: "Israel of God in Los Angeles",
+    title: "224 W. Etiwanda Ave, Rialto, CA 92376",
+    description:
+      "Service starts at 9:30pm PST, call 323-413-1357 for additional details"
+  };
   var pin41 = new Microsoft.Maps.Pushpin(riverdale, {
     color: "rgb(18, 20, 119)"
   });
+  pin41.metadata = {
+    place: "Israel of God in Chicago",
+    title: "520 W. 138th St., Riverdale, IL 60827",
+    description:
+      "Service starts at 12pm CST, call 708-392-1320 for additional details"
+  };
   var pin42 = new Microsoft.Maps.Pushpin(zion, {
     color: "#66CC00"
   });
+  pin41.metadata = {
+    place: "Israel's Church of the Living God in Zion",
+    title: "2501 Deborah Ave Unit 6, Zion, IL 60099",
+    description:
+      "Service starts at 1:30pm CST, call 847-636-4792 for additional details"
+  };
 
   //Add click event to pushpins
   Microsoft.Maps.Events.addHandler(pin0, "click", pushpinClicked);
