@@ -324,6 +324,7 @@ function GetMap() {
     credentials:
       "AqoDTfGAoEJlx1R_J5UK1Q-uigiRfDIpgTBOkck0eQBCpVwtKXPP06lrzhqOIuAv"
   });
+  console.log("getmap");
 
   //Create an infobox at the center of the map but don't show it.
   infobox = new Microsoft.Maps.Infobox(map.getCenter(), {
@@ -371,13 +372,11 @@ function GetMap() {
         address: "Closest Congregation",
         location: closest_camp
       });
-      console.log(curr);
-      console.log(ex);
       directionsManager.addWaypoint(curr);
       directionsManager.addWaypoint(ex);
+      //Calculate directions.
+      directionsManager.calculateDirections();
     });
-    //Calculate directions.
-    directionsManager.calculateDirections();
   });
 
   var peoria = new Microsoft.Maps.Location(40.699075, -89.58083);
@@ -911,7 +910,7 @@ function pushpinClicked(e) {
     //Set the infobox options with the metadata of the pushpin.
     infobox.setOptions({
       location: e.target.getLocation(),
-      title: e.target.metadata.title,
+      title: e.target.metadata.place,
       description: e.target.metadata.description,
       visible: true
     });
